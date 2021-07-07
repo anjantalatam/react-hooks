@@ -1,12 +1,12 @@
 import "./App.css";
-import ClassCounter from "./components/ClassCounter";
-import HooksCounterFour from "./components/HooksCounterFour";
-import ClassCounterTwo from "./components/ClassCounterTwo";
+import ClassCounterUe from "./components/ClassCounterUe";
+import HooksCounterUe from "./components/HooksCounterUe";
 
 function App() {
   return (
     <div className="App">
-      <HooksCounterFour />
+      <HooksCounterUe />
+      {/* <ClassCounterUe /> */}
     </div>
   );
 }

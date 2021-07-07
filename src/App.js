@@ -5,8 +5,8 @@ import HooksCounterUe from "./components/HooksCounterUe";
 function App() {
   return (
     <div className="App">
-      <HooksCounterUe />
-      {/* <ClassCounterUe /> */}
+      {/* <HooksCounterUe /> */}
+      <ClassCounterUe />
     </div>
   );
 }

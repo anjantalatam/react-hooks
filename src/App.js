@@ -4,6 +4,8 @@ import HooksCounterUe from "./components/HooksCounterUe";
 import ClassMouse from "./components/ClassMouse";
 import HooksMouse from "./components/HooksMouse";
 import MouseCounter from "./components/MouseCounter";
+import IntervalClassCounter from "./components/IntervalClassCounter";
+import IntervalFunctionalCounter from "./components/IntervalFunctionalCounter";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       {/* <HooksCounterUe /> */}
       {/* <ClassCounterUe /> */}
       {/* <Mouse /> */}
-      <MouseCounter />
+      {/* <MouseCounter /> */}
+      <IntervalFunctionalCounter />
+      {/* <IntervalClassCounter /> */}
     </div>
   );
 }

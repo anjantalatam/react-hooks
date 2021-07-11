@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
 
-function Mouse() {
+function HooksMouse() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
   const getCoordinates = (e) => {
+    console.log("Log coordinates");
     setX(e.clientX);
     setY(e.clientY);
   };
   useEffect(() => {
-    console.log("Logging Coordinates");
+    console.log("Counter Mounted");
     window.addEventListener("mousemove", getCoordinates);
+    return () => {
+      console.log("unmounting counter");
+      window.removeEventListener("mousemove", getCoordinates);
+    };
   }, []);
 
   return (
@@ -22,4 +27,4 @@ function Mouse() {
   );
 }
 
-export default Mouse;
+export default HooksMouse;

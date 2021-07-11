@@ -2,14 +2,16 @@ import "./App.css";
 import ClassCounterUe from "./components/ClassCounterUe";
 import HooksCounterUe from "./components/HooksCounterUe";
 import ClassMouse from "./components/ClassMouse";
-import Mouse from "./components/Mouse";
+import HooksMouse from "./components/HooksMouse";
+import MouseCounter from "./components/MouseCounter";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       {/* <HooksCounterUe /> */}
       {/* <ClassCounterUe /> */}
-      <Mouse />
+      {/* <Mouse /> */}
+      <MouseCounter />
     </div>
   );
 }
